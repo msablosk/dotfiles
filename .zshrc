@@ -3,12 +3,12 @@
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mitchellsablosky/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="duellj-msa"
+ZSH_THEME="msa"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,22 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias vpint="~/.scripts/vpint.sh"
-alias easy-registration="cd ~/Sites/Prepaid/easy-registration/integrationtest"
-alias prepaid="cd ~/Sites/Prepaid/prepaid/integrationtest"
-alias callback-application="cd ~/Sites/Prepaid/callback-application/integrationtest"
-alias callback-backoffice="cd ~/Sites/Prepaid/callback-backoffice/integrationtest"
-alias prepaid-backoffice="cd ~/Sites/Prepaid/prepaid-backoffice/integrationtest"
-alias shop-finder="cd ~/Sites/Prepaid/shop-finder-ng/integrationtests"
-alias MCE="cd ~/Sites/Prepaid/interfaces/MCE/"
-alias o2more="cd ~/Sites/Prepaid/o2more/integrationtest"
-alias chat-ui="cd ~/Sites/Prepaid/chat-ui/integrationtest"
-alias check-docker="~/.scripts/check-docker.sh"
-alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
-alias oo='open .' # open current directory in OS X Finder
-alias vim='mvim -v'
-
 
 # PATH exports
 export PATH=/usr/local/bin:$PATH
