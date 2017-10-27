@@ -17,7 +17,6 @@
 		"dist/*",
 		"node_modules/*"
 	],
-	"vintageous_reset_mode_when_switching_tabs": false,
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 5,
 	"caret_extra_top": 5,
@@ -73,6 +72,7 @@
 	"theme_tab_width_auto": true,
 	"translate_tabs_to_spaces": true,
 	"typescript_tsdk": "/usr/local/lib/node_modules/typescript/bin/tsc",
+	"vintage_start_in_command_mode": false,
+	"vintageous_reset_mode_when_switching_tabs": false,
 	"word_wrap": true
 }
-

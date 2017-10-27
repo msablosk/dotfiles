@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"Babel",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"CSS Extended Completions",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Markdown Preview",
+		"NeoVintageous",
+		"Origami",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-tslint",
+		"TypeScript",
+		"Vue Syntax Highlight"
+	]
+}
