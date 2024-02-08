@@ -86,29 +86,10 @@ source $ZSH/oh-my-zsh.sh
 #alias zshconfig="subl - n ~/.zshrc"
 #alias ohmyzsh="subl - n ~/.oh-my-zsh"
 
-alias SITES="cd ~/Sites"
-alias WORK="cd ~/Sites/work"
-alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
-alias oo='open .' # open current directory in OS X Finder
 alias gitpm='git branch --merged | grep -v \* | xargs git branch -D'
-alias java8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
-alias java15='export JAVA_HOME=`/usr/libexec/java_home -v 15`'
-alias python='python3'
 
 # PATH exports
 export PATH=/opt/homebrew/bin:$PATH:/usr/local/bin:$PATH:~/.bin:$PATH
-
-# Set default Java JDK (MacOS)
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-
-# Other exports
-export EDITOR=vim
-
-# Vim bindings
-
-bindkey -v
-export KEYTIMEOUT=20
 
 # Updates editor information when the keymap changes.
 function zle-keymap-select() {
@@ -141,14 +122,6 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-## Functions
-docker-cc(){
-	for var in "$@"
-	do
-		docker stop $var && docker rm $var
-	done
-}
-
 ## Autosuggestions
 #source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^a' autosuggest-accept
@@ -156,15 +129,3 @@ bindkey "[D" backward-word
 bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
-
-## NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-## Sublime text cli
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
