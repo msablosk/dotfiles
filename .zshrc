@@ -3,7 +3,7 @@
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/msa/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
